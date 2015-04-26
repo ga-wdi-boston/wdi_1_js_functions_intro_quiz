@@ -15,6 +15,7 @@ if (square(2) !== 4 || cube(3) !== 27 || quad(4) !== 256) {
   console.log("check question 1");
 }
 
+
 // Question 2
 // write a function sum(numbers, twiceOrHalf).
 // It should expect an array of numbers as the first argument
@@ -37,6 +38,7 @@ if (sum(nums) !== 12 || sum(nums, false) !== 6 || sum(nums, !undefined) !== 24) 
 // Question 3
 // write a function, max() that loops through zero or more arguments
 // and returns the largest number in that list
+
 /* your code starts here */
 
 /* your code ends here */
