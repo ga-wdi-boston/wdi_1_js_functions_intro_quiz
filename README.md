@@ -1,3 +1,5 @@
+![General Assembly Logo](http://i.imgur.com/ke8USTq.png)
+
 # Quiz: Introduction to JavaScript Functions
 
 #### Directions
