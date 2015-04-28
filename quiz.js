@@ -11,10 +11,10 @@ function square(x){
   return x*x;
 }
 function cube(x){
-  return x*x*x;
+  return square(x)*x;
 }
 function quad(x){
-  return x*x*x*x;
+  return square(square(x));
 }
 /* your code ends here */
 
@@ -34,26 +34,18 @@ if (square(2) !== 4 || cube(3) !== 27 || quad(4) !== 256) {
 
 /* your code starts here */
 function sum(numbers, twiceOrHalf){
-  if(twiceOrHalf ===undefined){
-    var  num1 = 0;
+  var  total = 0;
     for (var i = 0; i < numbers.length; i++) {
-      num1 +=numbers[i];
-    };
-    return num1;
+      total +=numbers[i]
+    }
+  if(twiceOrHalf ===undefined){
+    return total;
   }
   else if(twiceOrHalf){
-    var num2 = 0;
-    for (var i = 0; i < numbers.length; i++) {
-      num2 += numbers[i];
-    };
-    return num2 *2;
+    return total *2;
   }
   else{
-    var num3 = 0;
-    for (var i = 0; i < numbers.length; i++) {
-      num3 +=numbers[i];
-    };
-    return num3 / 2;
+    return total / 2;
   }
 }
 /* your code ends here */
@@ -71,18 +63,13 @@ if (sum(nums) !== 12 || sum(nums, false) !== 6 || sum(nums, !undefined) !== 24) 
 
 /* your code starts here */
 function max(args){
-  if (args === undefined){
-    return;
-  }
-  else{
-    var largest = 0;
-    for (var i = 0; i < args.length; i++) {
-      if (args[i] > largest){
-        largest = args[i];
-      }
+  var largest;
+  for (var i = 0; i < args.length; i++) {
+    if (args[i] > largest){
+      largest = args[i];
     }
-    return largest;
   }
+  return largest;
 }
 /* your code ends here */
 
