@@ -52,7 +52,7 @@ function sum(numbers, twiceOrHalf)
   {
     total *= 2;
   }
-  else if(!twiceOrHalf)
+  else if(!twiceOrHalf && twiceOrHalf !== undefined)
   {
     total /= 2;
   }
@@ -74,6 +74,22 @@ if (sum(nums) !== 12 || sum(nums, false) !== 6 || sum(nums, !undefined) !== 24) 
 // and returns the largest number in that list
 
 /* your code starts here */
+function max()
+{
+  var largest = arguments[0];
+  if(arguments.length === 0)
+  {
+    return undefined;
+  }
+  for(var i = 0; i < arguments.length; i++)
+  {
+    if(arguments[i] > largest)
+    {
+      largest = arguments[i];
+    }
+  }
+  return largest;
+}
 
 /* your code ends here */
 
