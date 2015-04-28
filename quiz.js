@@ -8,6 +8,19 @@
 
 /* your code starts here */
 
+function square(x) {
+  return (x*x);
+}
+
+function cube(x) {
+  return (x*x*x);
+}
+
+function quad(x) {
+  return (x*x*x*x);
+}
+
+
 /* your code ends here */
 
 //Question 1 check
@@ -25,7 +38,33 @@ if (square(2) !== 4 || cube(3) !== 27 || quad(4) !== 256) {
 // If the flag is falsy but not undefined, it should return half that sum
 
 /* your code starts here */
+var nums = [2, 4, 6];
 
+var previousValue = 0;
+var currentValue = 0;
+var total = 0;
+
+function sum(nums, twiceOrHalf) {
+  for (var i = 0; i < nums.length; i++) {
+
+    if (twiceOrHalf === undefined) {
+        currentValue = i;
+        total = (previousValue + currentValue);
+        previousValue = i;
+    }
+    else if (twiceOrHalf !== undefined) {
+        currentValue=(i/2);
+        total = (previousValue + currentValue);
+        previousValue = i;
+    }
+    else {
+        currentValue=(i*2);
+        total = (previousValue + currentValue);
+        previousValue = i;
+    }
+  }
+  return total;
+}
 /* your code ends here */
 
 //Question 2 check
