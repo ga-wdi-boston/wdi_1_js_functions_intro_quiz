@@ -7,7 +7,21 @@
 // verify that square(2) === 4, cube(3) === 27, and that quad(4) === 64
 
 /* your code starts here */
+function square(x) {
+  return x * x;
+}
 
+function cube(x) {
+  return x * x * x;
+}
+
+function quad(x) {
+  return x * x * x * x;
+}
+
+console.log(square(2));
+console.log(cube(3));
+console.log(quad(4));
 /* your code ends here */
 
 //Question 1 check
@@ -25,7 +39,18 @@ if (square(2) !== 4 || cube(3) !== 27 || quad(4) !== 256) {
 // If the flag is falsy but not undefined, it should return half that sum
 
 /* your code starts here */
+function sum(numbers, twiceOrHalf) {
 
+numbers = [];
+  if (twiceOrHalf === undefined) {
+    return numbers;
+  } else if (twiceOrHalf !== undefined) {
+      return sum * 2;
+      } else {
+        return sum / 2;
+      }
+return numbers + twiceOrHalf;
+}
 /* your code ends here */
 
 //Question 2 check
@@ -33,13 +58,20 @@ var nums = [2, 4, 6];
 if (sum(nums) !== 12 || sum(nums, false) !== 6 || sum(nums, !undefined) !== 24) {
   console.log("check question 2");
 }
-
-
 // Question 3
 // write a function, max() that loops through zero or more arguments
 // and returns the largest number in that list
 
 /* your code starts here */
+
+
+function max() {
+  var largest = 0;
+  for (var i = 0; i < arguments.length; i ++) {
+    largest +=arguments[i];
+  }
+  return largest;
+}
 
 /* your code ends here */
 
