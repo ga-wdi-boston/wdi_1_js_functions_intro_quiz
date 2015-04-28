@@ -68,11 +68,3 @@ if (sum(nums) !== 12 || sum(nums, false) !== 6 || sum(nums, !undefined) !== 24) 
 function max(0) {
 
 }
-
-/* your code ends here */
-
-//Question 3 check
-if (max() !== undefined || max(15) !== 15 ||
-    max(-1, 0) !== 0 || max(-1, -7, -4) !== -1) {
-  console.log("check question 3");
-}
