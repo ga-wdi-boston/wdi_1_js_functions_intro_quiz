@@ -8,6 +8,23 @@
 
 /* your code starts here */
 
+function square (x) {
+  return x * x;
+}
+
+function cube(x) {
+  return x * x * x;
+
+}
+
+function quad (x) {
+  return square(x) * square(x);
+}
+
+square(2);
+cube(3);
+quad(4);
+
 /* your code ends here */
 
 //Question 1 check
@@ -26,6 +43,22 @@ if (square(2) !== 4 || cube(3) !== 27 || quad(4) !== 256) {
 
 /* your code starts here */
 
+
+
+function sum (numbers, twiceOrHalf) {
+  var numbers = [3, 2, 6];
+  if (twiceOrHalf === undefined) {
+       return numbers.length;
+  } else if (twiceOrHalf !== undefined){
+       return numbers * 2;
+  } else if (!(twiceOrHalf)) {
+       return numbers / 2;
+  }
+}
+
+sum(numbers, twiceOrHalf);
+
+
 /* your code ends here */
 
 //Question 2 check
@@ -40,6 +73,20 @@ if (sum(nums) !== 12 || sum(nums, false) !== 6 || sum(nums, !undefined) !== 24) 
 // and returns the largest number in that list
 
 /* your code starts here */
+var random = [1, 2, 3];
+var largestNumber = {};
+x['longest'] = 0;
+
+function max (random) {
+ for (var i = 0; i < random.length; i++) {
+   if (random[i].length > x['longest'].length) {
+      x['longest'] = random[i];
+   }
+ }
+
+}
+
+random();
 
 /* your code ends here */
 
