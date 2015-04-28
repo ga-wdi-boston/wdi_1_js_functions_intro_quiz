@@ -40,6 +40,26 @@ if (square(2) !== 4 || cube(3) !== 27 || quad(4) !== 256) {
 
 /* your code starts here */
 
+function sum(numbers, twiceOrHalf)
+{
+  var total = 0;
+  for(var i = 0; i < numbers.length; i++)
+  {
+    total += numbers[i];
+  }
+
+  if(twiceOrHalf)
+  {
+    total *= 2;
+  }
+  else if(!twiceOrHalf)
+  {
+    total /= 2;
+  }
+  return total;
+
+}
+
 /* your code ends here */
 
 //Question 2 check
