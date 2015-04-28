@@ -6,9 +6,18 @@
 // and quad(x), x times x times x times x, using the function square(x)
 // verify that square(2) === 4, cube(3) === 27, and that quad(4) === 64
 
-/* your code starts here */
 
-/* your code ends here */
+function square(x) {
+  return x * x;
+}
+
+function cube(x) {
+  return x * x * x;
+}
+
+function quad(x) {
+  return x * x * x * x;
+}
 
 //Question 1 check
 if (square(2) !== 4 || cube(3) !== 27 || quad(4) !== 256) {
@@ -24,9 +33,9 @@ if (square(2) !== 4 || cube(3) !== 27 || quad(4) !== 256) {
 // If the flag is truthy, it should return twice that sum
 // If the flag is falsy but not undefined, it should return half that sum
 
-/* your code starts here */
+function sum(number, twiceOrHalf) {
 
-/* your code ends here */
+}
 
 //Question 2 check
 var nums = [2, 4, 6];
