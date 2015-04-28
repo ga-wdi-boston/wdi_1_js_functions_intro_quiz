@@ -7,6 +7,20 @@
 // verify that square(2) === 4, cube(3) === 27, and that quad(4) === 64
 
 /* your code starts here */
+function square(num)
+{
+  return num * num;
+}
+
+function cube(num)
+{
+  return square(num) * num;
+}
+
+function quad(num)
+{
+  return cube(num) * num;
+}
 
 /* your code ends here */
 
