@@ -12,11 +12,11 @@ var square = function(x){
 }
 
 var cube = function(x){
-  return x*x*x;
+  return square(x)*x;
 }
 
 var quad = function(x){
-  return x*x*x*x;
+  return square(x)*square(x);
 }
 
 // console.log(square(2));
