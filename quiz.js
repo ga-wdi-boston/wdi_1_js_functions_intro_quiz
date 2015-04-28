@@ -8,6 +8,18 @@
 
 /* your code starts here */
 
+function square(x) {
+  return x*x
+}
+
+function cube(x) {
+  return x*x*x
+}
+
+function quad(x) {
+  return x*x*x*x
+}
+
 /* your code ends here */
 
 //Question 1 check
@@ -26,6 +38,16 @@ if (square(2) !== 4 || cube(3) !== 27 || quad(4) !== 256) {
 
 /* your code starts here */
 
+function sum(numbers, twiceOrHalf) {
+  if (twiceOrHalf === true) {
+    return 2*numbers;
+  } else if (twiceOrHalf === false) {
+    return 0.5*numbers;
+  } else if (!twiceOrHalf) {
+    return numbers;
+  }
+}
+
 /* your code ends here */
 
 //Question 2 check
@@ -40,6 +62,10 @@ if (sum(nums) !== 12 || sum(nums, false) !== 6 || sum(nums, !undefined) !== 24) 
 // and returns the largest number in that list
 
 /* your code starts here */
+
+function max() {
+
+}
 
 /* your code ends here */
 
