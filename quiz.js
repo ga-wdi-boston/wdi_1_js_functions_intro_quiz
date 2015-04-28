@@ -65,7 +65,7 @@ if (sum(nums) !== 12 || sum(nums, false) !== 6 || sum(nums, !undefined) !== 24) 
 // and returns the largest number in that list
 
 /* your code starts here */
-function max() {
+function max(0) {
 
 }
 
