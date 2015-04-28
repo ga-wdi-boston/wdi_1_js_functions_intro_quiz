@@ -11,7 +11,7 @@ function square(x) {
   return x * x;
 }
 function cube(x) {
-  return x * x * x;
+  return square(x) * x;
 }
 function quad(x) {
   return square(x) * square(x);
@@ -36,15 +36,15 @@ if (square(2) !== 4 || cube(3) !== 27 || quad(4) !== 256) {
 
 function sum(numbers, twiceOrHalf) {
 var count = 0
-
-if (twiceOrHalf = undefined) {
   for (var i = 0; i < numbers.length; i++ ) {
     return  count = numbers + numbers[i];
   }
-} else if (twiceOrHalf = true) {
-  return count * 2
-} else if ( twiceOrHalf = false) {
-  return count / 2
+  if (twiceOrHalf === undefined) {
+    return count
+} else if (twiceOrHalf) {
+  return count * 2;
+} else {
+  return count / 2;
 }
 }
 /* your code ends here */
@@ -62,15 +62,15 @@ if (sum(nums) !== 12 || sum(nums, false) !== 6 || sum(nums, !undefined) !== 24) 
 /* your code starts here */
 
 function max() {
-  var maximum = 0
-  for (var i = 0, i < max.length; i++) {
-    if (max[i] > maximum){
-      maximum = max[i];
+  var maximum = arguments[0]
+  for (var i = 0, i < arguments.length; i++) {
+    if (arguments[i] > maximum){
+      maximum = arguments[i];
       }
     }
 }
 
-console.log(maximum)
+return largest
 
 
 /* your code ends here */
