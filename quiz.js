@@ -37,17 +37,15 @@ if (square(2) !== 4 || cube(3) !== 27 || quad(4) !== 256) {
 /* your code starts here */
 function sum(numbers, twiceOrHalf){
     var total;
-    var array = []
-    numarray = numbers;
-    for(i=0; i < numarray.length; i++){
-      total += numarray[i];
+    for(var i=0; i < numbers.length; i++){
+      total += numbers[i];
     }
 
   if(twiceOrHalf === undefined){
     return total;
-  } else if (twiceOrHalf !== false){
+  } else if (twiceOrHalf){
     return total * 2;
-  } else if (twiceOrHalf !== true);{
+  } else {
     return total / 2;
   }
 }
@@ -66,17 +64,14 @@ if (sum(nums) !== 12 || sum(nums, false) !== 6 || sum(nums, !undefined) !== 24) 
 // and returns the largest number in that list
 
 /* your code starts here */
-function max(a, b, c){
-
-    if (a > b && a > c){
-      return a;
+function max(){
+  var largest = arguments[0];
+  for(var i = 0; i < arguments.length; i++ ){
+    if (arguments[i > largest) {
+      largest = arguments[i];
     }
-    if (b > a && b > c){
-      return b;
-    }else {
-      return c;
-    }
-
+  }
+  return largest;
 }
 /* your code ends here */
 
