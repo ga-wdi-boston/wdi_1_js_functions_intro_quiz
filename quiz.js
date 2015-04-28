@@ -7,6 +7,20 @@
 // verify that square(2) === 4, cube(3) === 27, and that quad(4) === 64
 
 /* your code starts here */
+function square(num)
+{
+  return num * num;
+}
+
+function cube(num)
+{
+  return square(num) * num;
+}
+
+function quad(num)
+{
+  return cube(num) * num;
+}
 
 /* your code ends here */
 
@@ -26,6 +40,26 @@ if (square(2) !== 4 || cube(3) !== 27 || quad(4) !== 256) {
 
 /* your code starts here */
 
+function sum(numbers, twiceOrHalf)
+{
+  var total = 0;
+  for(var i = 0; i < numbers.length; i++)
+  {
+    total += numbers[i];
+  }
+
+  if(twiceOrHalf)
+  {
+    total *= 2;
+  }
+  else if(!twiceOrHalf && twiceOrHalf !== undefined)
+  {
+    total /= 2;
+  }
+  return total;
+
+}
+
 /* your code ends here */
 
 //Question 2 check
@@ -40,6 +74,22 @@ if (sum(nums) !== 12 || sum(nums, false) !== 6 || sum(nums, !undefined) !== 24) 
 // and returns the largest number in that list
 
 /* your code starts here */
+function max()
+{
+  var largest = arguments[0];
+  if(arguments.length === 0)
+  {
+    return undefined;
+  }
+  for(var i = 0; i < arguments.length; i++)
+  {
+    if(arguments[i] > largest)
+    {
+      largest = arguments[i];
+    }
+  }
+  return largest;
+}
 
 /* your code ends here */
 
