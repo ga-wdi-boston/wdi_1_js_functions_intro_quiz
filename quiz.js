@@ -7,6 +7,17 @@
 // verify that square(2) === 4, cube(3) === 27, and that quad(4) === 64
 
 /* your code starts here */
+function square(x) {
+  return (x * 2);
+}
+
+function cube(x) {
+  return square(x) * 2;
+}
+
+function quad(x) {
+  return square(x) * x * x;
+}
 
 /* your code ends here */
 
@@ -25,7 +36,18 @@ if (square(2) !== 4 || cube(3) !== 27 || quad(4) !== 256) {
 // If the flag is falsy but not undefined, it should return half that sum
 
 /* your code starts here */
+function sum(numbers, twiceOrHalf) {
 
+  if (flag === undefined) {
+    return
+  }
+  if(flag){
+    return
+  }
+  else {
+    return
+  }
+}
 /* your code ends here */
 
 //Question 2 check
@@ -40,7 +62,9 @@ if (sum(nums) !== 12 || sum(nums, false) !== 6 || sum(nums, !undefined) !== 24) 
 // and returns the largest number in that list
 
 /* your code starts here */
-
+function max(){
+  for (var i = 0; )
+}
 /* your code ends here */
 
 //Question 3 check
