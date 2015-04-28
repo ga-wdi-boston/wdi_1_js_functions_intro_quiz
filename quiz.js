@@ -8,6 +8,8 @@
 
 /* your code starts here */
 
+/* I'm handing in this quiz as-is. I simply do not understand this enough. I'd really like to audit (not participate but just listen and learn) for the rest of the day so I don't hold anyone else back during our labs and other activities today. Thank you. - CHRIS */
+
 /* your code ends here */
 
 //Question 1 check
